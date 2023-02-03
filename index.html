@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="./images/logo.svg">
+  <style>
+    @font-face {
+      font-family: myFont;
+      src: url(./fonts/FontsFree-Net-SFProDisplay-Regular.ttf);
+      font-weight: 400px;
+    }
+   
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body{
+      height:100%;
+      font-family:myFont;
+      font-size: 71px;
+      font-weight: 600
+    }
+    
+      .wrapper{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+ }
+ .main{
+    flex:1 1 auto 
+ }
+ .header{
+    margin: 113px auto 75px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .header__icon{
+display: flex;
+justify-content: center;
+
+ }
+ .header__img{
+flex:0 1 auto
+ }
+ [class*="__container"]{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+ .clock-function{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+ }
+
+
+ 
+ .clock-function__title{
+    max-width: 636px;
+ }
+ .clock-function__text{
+    text-align: center;
+ }
+ .clock-function__icon{
+    flex:1 1 auto
+ }
+ .clock-function__img{
+    width: 100%;
+ }
+ .clock-function__title-differ{
+    max-width: 1032px;
+ }
+ .clock-colors__img{
+ width: 100%;
+}
+ .clock-colors{
+    background-color: #f7f7f7;
+    margin-top: 146px;
+    max-width: 100%;
+    display: flex;
+    align-items: flex-end;
+ }
+ .clock-protectwater{
+    padding-top: 183px;
+    display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+   margin-bottom: 117px;}
+    
+.clock-protectwater__img{
+   width: 100%;
+   }
+ 
+ .keepyoursleep{
+    margin-bottom: 136px;
+ }
+.basic-characteristics{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 130px;
+}
+
+.basic-characteristics__item{
+    width: 350px;
+}
+.basic-characteristics__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.basic-characteristics__item__text{
+  font-size: 28px;
+}
+.basic-characteristics__content{
+    margin-top: 96px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 300px;
+ 
+}
+.basic-characteristics__column{
+    display: flex;
+    flex-direction: column;
+    row-gap: 100px;
+}
+    .basic-characteristics__column :not(:last-child):after{
+    content:'';
+    width: 144px;
+    height: 2px;
+    background-color: #131313;
+    display: block;
+    margin-top: 70px;
+   
+}
+.basic-characteristics__title{
+    text-align: center;
+
+}
+
+.keepyoursleep__item__text{
+   font-size: 36px;
+   text-align: center;
+   max-width: 250px;
+}
+.keepyoursleep__item__text__differ{
+   max-width: 400px;
+}
+.keepyoursleep__item{
+   background-color:#f7f7f7;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center; 
+   flex:1 1 100%
+}
+.keepyoursleep__content{
+   display: flex;
+   justify-content: space-between;
+   align-content: stretch;
+  column-gap: 10px;
+}
+.keepyoursleep__item3{
+   flex-direction: row;
+   justify-content: flex-end;
+   align-items: stretch;
+}
+.keepyoursleep__item__title{
+   text-align: center;
+}
+.keepyoursleep__item__title3{
+   display: flex;
+   justify-content: flex-end;
+   margin: 30px auto auto 30px;
+}
+
+.keepyoursleep__column{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   gap: 10px;
+   flex: 1 1 50%;
+}
+.keepyoursleep__item__img{
+   max-width: 100%
+}
+.keepyoursleep__item__differ{
+   padding: 10px;
+}
+.keepyoursleep__item4{
+  flex: 1 1 30%;
+  padding:30px
+}
+.keepyoursleepitem__main-text{
+   color:#54B435;
+}
+.keepyoursleep__item__icon3{
+  display: flex;
+  align-content: flex-end;
+}
+.footer_content__icon{
+   width: 100%;
+}
+.footer{
+   margin-top: 146px;
+   min-height: 100%;
+}
+.footer__content{
+   display: flex;
+   justify-content: space-between;
+   align-content: stretch;
+   gap: 10px;
+
+}
+.footer__column2{
+   justify-content: space-between;
+   gap:10px;
+   flex:1 1 40%
+}
+.footer__column1{
+   flex: 0 1 60%;
+}
+.footer__column{
+display: flex;
+flex-direction: column;
+}
+.footer__item-differ{
+   justify-content: flex-end;
+   align-items: center;
+
+
+}
+.footer__item{
+   background-color: #f7f7f7;
+   display: flex;
+   flex-direction: column;
+   flex: 1 1 100%; 
+   justify-content: center;
+}
+.footer__item__content{
+   display: flex;
+   flex-direction: column;
+}
+.footer__item__title{
+   font-size: 30px;
+   text-align: center;
+   margin: 30px;
+}
+.footer__item__title1{
+   font-size: 71px;
+   max-width: 500px;
+   padding-bottom: 70px;
+}
+.footer__item__img{
+  width: 100%;
+}
+.footer__item__icon{
+   display: flex;
+flex:1 1 auto;
+justify-content: center;
+}
+.footer__item__text{
+   max-width: 300px;
+}
+      
+      .keepyoursleep__item__text {
+        font-size: 35px;
+        max-width: 200px;
+      }
+      
+      .keepyoursleep__item__text{
+        max-width: 250px;
+      }
+      .keepyoursleep__item__text__differ {
+        max-width: 320px;
+      }
+      .keepyoursleepitem__main-text{
+         font-size: 71px;
+      }
+      @media(max-width:1200px) {
+      [class*="__container"] {
+        max-width: 1054px;
+      }
+    }
+
+    @media(max-width:1100px) {
+      [class*="__container"] {
+        max-width: 991px;
+      }
+    }
+
+    @media(max-width:991.98px) {
+      [class*="__container"] {
+        max-width: 750px;
+      }
+
+      .header__img {
+        width: 50%;
+      }
+    }
+
+    @media(max-width:767.98px) {
+      [class*="__container"] {
+        max-width: 576px;
+      }
+      body {
+        font-size: 45px;
+      }
+      .basic-characteristics__title{
+        font-size: 50px;
+      }
+      .basic-characteristics__item__text{
+       font-size: 25px;
+}
+.clock-function__title{
+  max-width: 400px;
+}
+.footer__item__title{
+        font-size: 25px;
+      }
+      .footer__item__title1{
+        padding-top:20px ;
+        font-size: 45px;
+      }
+      .keepyoursleep__content{
+        flex-direction: column;
+        gap:10px
+      }
+      .footer__content {
+        flex-direction: column;
+        gap: 10px;
+      }
+      .basic-characteristics__content{
+        flex-direction:column ;
+         align-items: center;
+         justify-content: center;
+      }}
+    @media(max-width:575.98px) {
+      [class*="__container"] {
+        max-width: 380px;
+      }
+      .header__img {
+        width: 30%;
+      }
+      .clock-function__title{
+     max-width: 370px;
+}
+.clock-protectwater{
+  padding-top: 90px;
+}
+      
+      
+      body{
+        font-size: 40px;
+      }
+    }
+  </style>
+  <title>Watch SE</title>
+</head>
+
+<body>
+  <wrapper class="wrapper">
+    <header class="header">
+      <div class="header__container">
+        <div class="header__icon">
+          <img class="header__img" src="./images/logo.svg">
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="clock-function">
+        <div class="clock-function__container">
+          <div class="clock-function__title">
+            <p class="clock-function__text">Можна закохатися. З багатьох причин.</p>
+          </div>
+          <div class="clock-function__icon">
+            <img src="./images/clock-function.svg"
+              alt="AppleClock" class="clock-function__img">
+          </div>
+          <div class="clock-function__title-differ clock-function__title ">
+            <p class="clock-function__text">Основні функції для підтримання здоров`я, безпеки й активного
+              способу життя</p>
+          </div>
+        </div>
+      </div>
+      <div class="clock-colors">
+        <img src="./images/clockcolour.png" alt="clockcolour" class="clock-colors__img">
+      </div>
+      <div class="clock-protectwater">
+        <div class="clock-protectwater__container">
+          <p class="clock-protectwater__text">Захист від води</p>
+        </div>
+        <div class="clock-protectwater__icon">
+          <img src="./images/protectWater.png" alt="protectWater" class="clock-protectwater__img">
+        </div>
+      </div>
+      <div class="keepyoursleep">
+        <div class="keepyoursleep__content">
+          <div class="keepyoursleep__column">
+            <div class="keepyoursleep__item keepyoursleep__item__differ">
+              <div class="keepyoursleep__item__icon">
+                <img src="./images/followyoursleep.png" alt="followYourSleep" class="keepyoursleep__item__img">
+              </div>
+              <div class="keepyoursleep__item__title">
+                <p class="keepyoursleep__item__text">
+                  Відстежуйте фазу сну
+                </p>
+              </div>
+            </div>
+            <div class="keepyoursleep__item keepyoursleep__item__differ">
+              <div class="keepyoursleep__item__icon">
+                <img src="./images/sos.png" alt="sos" class="keepyoursleep__item__img">
+              </div>
+              <div class="keepyoursleep__item__title">
+                <p class="keepyoursleep__item__text__differ keepyoursleep__item__text">
+                  Функції "Виявлення аварій" і "Виявлення падіння</p>
+              </div>
+            </div>
+          </div>
+          <div class="keepyoursleep__column">
+            <div class="keepyoursleep__item3 keepyoursleep__item">
+              <div class="keepyoursleep__item__title3 keepyoursleep__item__title ">
+                <p class="keepyoursleep__item__text">
+                  Задня панель відповідного кольору</p>
+              </div>
+              <div class="keepyoursleep__item__icon3 keepyoursleep__item__icon">
+                <img src="./images/watch_half.png" alt="watchhalf"
+                  class="keepyoursleep__item__img">
+              </div>
+            </div>
+            <div class="keepyoursleep__item keepyoursleep__item4">
+              <div class="keepyoursleep__item__title">
+                <p class="keepyoursleepitem__main-text">На 20%</p>
+              </div>
+              <div class="keepyoursleep__item__title">
+                <p class="keepyoursleep__item__text">
+                  вища продуктивність</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="basic-characteristics">
+          <div class="basic-characteristics__container">
+
+            <p class="basic-characteristics__title">Основні характеристики</p>
+
+            <div class="basic-characteristics__content">
+              <div class="basic-characteristics__column">
+                <div class="basic-characteristics__item">
+                  <p class="basic-characteristics__item__text">Відповідайте на дзвінки та повідомлення просто із зап’ястя</p>
+                </div>
+                <div class="basic-characteristics__item">
+                  <p class="basic-characteristics__item__text">До 20% швидший за попередній Apple Watch SE</p>
+                </div>
+                <div class="basic-characteristics__item">
+                  <p class="basic-characteristics__item__text">Розширені функції безпеки, зокрема Виявлення падіння, Сигнал SOS і Виявлення аварій</p>
+                </div>
+                <div class="basic-characteristics__item">
+                  <p class="basic-characteristics__item__text">Відстежуйте свою активність протягом дня з Apple Watch, а потім переглядайте тенденції в додатку «Фітнес» на iPhone</p>
+                </div>
+                <div class="basic-characteristics__item">
+                  <p class="basic-characteristics__item__text">
+                    Покращений додаток «Тренування» з удосконаленими підходами до вправ
+                  </p>
+                </div>
+              </div>
+              <div class="basic-characteristics__column">
+                <div class="basic-characteristics__item">
+                  <p class="basic-characteristics__item__text">Отримуйте сповіщення про високий, низький і порушений серцевий ритм</p>
+                </div>
+                <div class="basic-characteristics__item">
+                  <p class="basic-characteristics__item__text">Слухайте улюблену музику, подкасти й аудіокниги (для використання в моделях GPS)</p>
+                </div>
+                <div class="basic-characteristics__item">
+                  <p class="basic-characteristics__item__text">Захист від води</p>
+                </div>
+                <div class="basic-characteristics__item">
+                  <p class="basic-characteristics__item__text">Відстеження сну дає змогу дізнатися,скільки часу ви перебували у фазах швидкого, повільного та глибокого сну</p>
+                </div>
+
+                <div class="basic-characteristics__item">
+                  <p class="basic-characteristics__item__text">watchOS 9 підтримує покращений додаток «Тренування», новий додаток «Ліки», фази сну та дає змогу краще відстежувати ритм серця</p>
+                </div>
+            </div>
+          </div>
+          </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__content">
+        <div class="footer__column1 footer__column">
+          <div class="footer__column1__item footer__item-differ footer__item">
+            <div class="footer__item__content1">
+              <div class="footer__item__title1 footer__item__title">
+                <p class="footer___item__text">Що в комплекті</p>
+              </div>
+              <div class="footer__item__icon">
+                <img class="footer__item__img" src="./images/clockface.png">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__column2 footer__column">
+          <div class="footer__column2__item1 footer__item">
+            <div class="footer__item__content">
+              <div class="footer__item__title">
+                <p class="footer___item__text">Спортивний ремінець</p>
+              </div>
+              <div class="footer__item__icon">
+                <img class="footer__item__img" src="./images/clockbelt.png">
+              </div>
+            </div>
+          </div>
+          <div class="footer__column2__item2 footer__item-differ footer__item">
+            <div class="footer__item__content1">
+              <div class="footer__item__title">
+                <p class="footer__item__text">Кабель USB-C з магнітним кріпленням для заряджання</p>
+              </div>
+              <div class="footer__item__icon">
+                <img class="footer___item__img" src="./images/chager.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </wrapper>
+</body>
+
+</html>
